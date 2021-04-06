@@ -65,6 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Content Include="install.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="uninstall.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ProjectInstaller.resx">
