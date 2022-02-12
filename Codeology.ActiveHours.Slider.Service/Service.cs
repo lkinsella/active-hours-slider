@@ -37,7 +37,7 @@ namespace Codeology.ActiveHours.Slider
                     while (!_cts.IsCancellationRequested)
                     {
                         await _slider.SlideAsync();
-                        await Task.Delay(TimeSpan.FromHours(4), _cts.Token);
+                        await Task.Delay(TimeSpan.FromMinutes(20), _cts.Token);
                     }
                 }
                 catch (TaskCanceledException)
